@@ -1,7 +1,9 @@
 <template>
   <div>
-    <Hero link="#bio" title="Hi, I'm Lucas" />
-    <div id="bio" class="flex flex-col items-center justify-center py-20">
+    <Hero title="Hi, I'm Lucas">
+      <div class="mt-8 wave">👋</div>
+    </Hero>
+    <div id="main" class="flex flex-col items-center justify-center py-20">
       <img class="border-4 rounded-full shadow-lg h-52 border-brand-light" src="../assets/images/headshot.jpg" alt="">
       <p class="mx-4 mt-6 text-center md:mx-40">
         I'm a full-stack software engineer based in Austin, TX. Currently, I'm working as a Software Engineer II at 
@@ -78,9 +80,9 @@ export default {
   }
 
   .bounce {
-    -moz-animation: bounce 2s 4;
-    -webkit-animation: bounce 2s 4;
-    animation: bounce 2s 4;
+    -moz-animation: bounce 1s 12;
+    -webkit-animation: bounce 1s 12;
+    animation: bounce 1s 12;
   }
 
   @keyframes bounce {

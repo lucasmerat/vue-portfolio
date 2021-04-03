@@ -72,9 +72,24 @@
           v-if="navBarOpen"
           class="absolute z-10 flex flex-col ml-10 text-2xl sm:hidden top-20"
         >
-          <a class="mb-2 text-accent hover:text-yellow-200" href="#">Link</a>
-          <a class="mb-2 text-accent hover:text-yellow-200" href="#">Link</a>
-          <a class="text-accent hover:text-yellow-200" href="#">Link</a>
+          <router-link
+            to="/work"
+            active-class="border-b-2 border-accent"
+            class="text-accent hover:text-yellow-200"
+            >Work</router-link
+          >
+          <router-link
+            to="/code"
+            active-class="border-b-2 border-accent"
+            class="text-accent hover:text-yellow-200"
+            >Code</router-link
+          >
+          <router-link
+            to="/contact"
+            active-class="border-b-2 border-accent"
+            class="text-accent hover:text-yellow-200"
+            >Contact</router-link
+          >
         </div>
       </transition>
     </div>
@@ -95,7 +110,7 @@ export default {
 .fade-enter-active, .fade-leave-active {
   transition: opacity .5s;
 }
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+.fade-enter, .fade-leave-to {
   opacity: 0;
 }
 </style>
