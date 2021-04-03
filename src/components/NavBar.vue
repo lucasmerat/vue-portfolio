@@ -1,5 +1,5 @@
 <template>
-  <nav class="text-2xl flex justify-between mx-8 mt-6">
+  <nav class="absolute px-10 w-full z-10 text-2xl flex justify-between mt-6">
     <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
       <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
         <span class="sr-only">Open main menu</span>
@@ -25,11 +25,11 @@
         </svg>
       </button>
     </div>
-    <router-link to="/" exact active-class="border-b-2 border-yellow-300" class="text-yellow-300 hover:text-yellow-400">Lucas Merat</router-link>
+    <router-link to="/" exact active-class="border-b-2 border-accent" class="text-accent hover:text-yellow-200">Lucas Merat</router-link>
     <div>
-      <router-link to="/work" active-class="border-b-2 border-yellow-300" class="text-yellow-300 hover:text-yellow-400 mr-4">Work</router-link>
-      <router-link to="/code" active-class="border-b-2 border-yellow-300" class="text-yellow-300 hover:text-yellow-400 mr-4">Code</router-link>
-      <router-link to="/contact" active-class="border-b-2 border-yellow-300" class="text-yellow-300 hover:text-yellow-400 mr-4">Contact</router-link>
+      <router-link to="/work" active-class="border-b-2 border-accent" class="text-accent hover:text-yellow-200 mr-4">Work</router-link>
+      <router-link to="/code" active-class="border-b-2 border-accent" class="text-accent hover:text-yellow-200 mr-4">Code</router-link>
+      <router-link to="/contact" active-class="border-b-2 border-accent" class="text-accent hover:text-yellow-200 mr-4">Contact</router-link>
     </div>
 
     <div class="sm:hidden" id="mobile-menu">
