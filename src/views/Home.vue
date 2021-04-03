@@ -1,9 +1,9 @@
 <template>
   <div>
-    <Hero link="#bio" title="Hello, I'm Lucas" />
+    <Hero link="#bio" title="Hi, I'm Lucas" />
     <div id="bio" class="flex flex-col items-center justify-center py-20">
       <img class="border-4 rounded-full shadow-lg h-52 border-brand-light" src="../assets/images/headshot.jpg" alt="">
-      <p class="mx-40 mt-6 text-center">
+      <p class="mx-4 mt-6 text-center md:mx-40">
         I'm a full-stack software engineer based in Austin, TX. Currently, I'm working as a Software Engineer II at 
         <a class="underline text-brand-light hover:text-brand-dark" href="www.skillsengine.com">SkillsEngine</a> - we help colleges better
         align their curriculum to the job market. I've always been passionate about how software can create opportunities and improve

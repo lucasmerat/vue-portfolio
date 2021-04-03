@@ -1,51 +1,101 @@
 <template>
-  <nav class="absolute px-10 w-full z-10 text-2xl flex justify-between mt-6">
-    <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-      <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <!--
-          Icon when menu is closed.
-
-          Heroicon name: outline/menu
-
-          Menu open: "hidden", Menu closed: "block"
-        -->
-        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-        <!--
-          Icon when menu is open.
-
-          Heroicon name: outline/x
-
-          Menu open: "block", Menu closed: "hidden"
-        -->
-        <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </button>
-    </div>
-    <router-link to="/" exact active-class="border-b-2 border-accent" class="text-accent hover:text-yellow-200">Lucas Merat</router-link>
-    <div>
-      <router-link to="/work" active-class="border-b-2 border-accent" class="text-accent hover:text-yellow-200 mr-4">Work</router-link>
-      <router-link to="/code" active-class="border-b-2 border-accent" class="text-accent hover:text-yellow-200 mr-4">Code</router-link>
-      <router-link to="/contact" active-class="border-b-2 border-accent" class="text-accent hover:text-yellow-200 mr-4">Contact</router-link>
-    </div>
-
-    <div class="sm:hidden" id="mobile-menu">
-      <div class="px-2 pt-2 pb-3 space-y-1">
-        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-        <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">Dashboard</a>
-        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
-        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
-        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Calendar</a>
+  <div>
+    <nav
+      class="absolute z-10 flex justify-between w-full px-4 mt-6 text-3xl md:px-10 md:text-2xl"
+    >
+      <router-link
+        to="/"
+        exact
+        active-class="border-b-2 border-accent"
+        class="text-accent hover:text-yellow-200"
+        >Lucas Merat</router-link
+      >
+      <div class="hidden md:block">
+        <router-link
+          to="/work"
+          active-class="border-b-2 border-accent"
+          class="mr-4 text-accent hover:text-yellow-200"
+          >Work</router-link
+        >
+        <router-link
+          to="/code"
+          active-class="border-b-2 border-accent"
+          class="mr-4 text-accent hover:text-yellow-200"
+          >Code</router-link
+        >
+        <router-link
+          to="/contact"
+          active-class="border-b-2 border-accent"
+          class="mr-4 text-accent hover:text-yellow-200"
+          >Contact</router-link
+        >
       </div>
+
+      <div class="flex items-center sm:hidden">
+        <button
+          v-on:click="navBarOpen = !navBarOpen"
+          type="button"
+          class="inline-flex items-center justify-center p-2 rounded-md text-accent hover:text-yellow-200"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <!--
+            Icon when menu is closed.
+          -->
+          <svg
+            class="block w-6 h-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+          <!--
+            Icon when menu is open.
+          -->
+          <!-- <svg class="hidden w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg> -->
+        </button>
+      </div>
+    </nav>
+      <transition name="fade">
+        <div
+          v-if="navBarOpen"
+          class="absolute z-10 flex flex-col ml-10 text-2xl sm:hidden top-20"
+        >
+          <a class="mb-2 text-accent hover:text-yellow-200" href="#">Link</a>
+          <a class="mb-2 text-accent hover:text-yellow-200" href="#">Link</a>
+          <a class="text-accent hover:text-yellow-200" href="#">Link</a>
+        </div>
+      </transition>
     </div>
-  </nav>
 </template>
 
 <script>
 export default {
-  name: 'NavBar',
-}
+  name: "NavBar",
+  data: function() {
+    return {
+      navBarOpen: false,
+    };
+  },
+};
 </script>
+
+<style scoped>
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+</style>
