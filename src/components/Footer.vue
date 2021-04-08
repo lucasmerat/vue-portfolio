@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center justify-center py-4 text-3xl bg-brand-dark text-accent">
+  <div class="flex items-center justify-center py-4 text-3xl text-accent">
     <a aria-label="github link" class="mr-5" target="_blank" href="https://github.com/lucasmerat/">
       <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'github-square' }" />
     </a>

@@ -1,13 +1,17 @@
 <template>
   <div>
-    <Hero title="Hi, I'm Lucas">
-      <div class="mt-8 wave">👋</div>
+    <Hero>
+      <div class="relative z-20 w-full ml-6 font-bold text-left md:ml-24 text-7xl md:text-8xl text-accent">
+        <h1><span class="block md:inline">Hi,</span> I'm Lucas</h1>
+        <h2 class="mt-8 text-2xl font-light">A web developer</h2>
+      </div>
     </Hero>
-    <div id="main" class="flex flex-col items-center justify-center py-20">
+    <div id="main" class="w-full px-6 pt-64 pb-16 md:w-2/3 md:ml-16">
       <img class="border-4 rounded-full shadow-lg h-52 border-brand-light" src="../assets/images/headshot.jpg" alt="">
-      <p class="mx-4 mt-6 text-center md:mx-40">
-        I'm a full-stack software engineer based in Austin, TX. Currently, I'm working as a Software Engineer II at 
-        <a class="underline text-brand-light hover:text-brand-dark" href="www.skillsengine.com">SkillsEngine</a> - we help colleges better
+      <h4 class="pt-4 text-5xl font-bold text-accent">I'm a full stack software developer based in Austin, TX</h4>
+      <p class="mt-6 text-2xl font-light text-accent">
+        Currently, I'm working as a Software Engineer II at 
+        <a class="underline text-brand-light hover:text-brand-dark" href="https://www.skillsengine.com">SkillsEngine</a> - we help colleges better
         align their curriculum to the job market. I've always been passionate about how software can create opportunities and improve
         outcomes in education and beyond. As a developer, I strive to always keep the user and product in mind, while writing efficient and effective code. It's my mission
         to continue building functional, beautiful applications that people love to use.
@@ -32,20 +36,6 @@ export default {
 <style>
   html {
     scroll-behavior: smooth;
-  }
-  .top-section {
-    background: url(../assets/images/sky.jpg) 50% 0 no-repeat fixed;
-    background-size: cover;
-    height: 100vh;
-  }
-  .top-section::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.3);
   }
 
   .wave {

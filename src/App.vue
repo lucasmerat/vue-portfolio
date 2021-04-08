@@ -18,3 +18,12 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+  #app {
+    background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.137), rgba(0, 0, 0, 1)),
+    url(./assets/images/sky.jpg);
+    background-size: cover;
+  }
+</style>
