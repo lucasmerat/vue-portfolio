@@ -10,8 +10,8 @@
       </div>
     </Hero>
     <div id="main" class="mt-12 text-accent">
-      <WorkItem 
-        title="Spring"
+      <WorkItem
+        title="Spriing"
         subtitle="Helps job seekers track and manage their job search in a sleek dashboard"
         frontStack="React, Redux, Ant Design, TailwindCSS"
         backStack=" Node, Express, MongoDB, Heroku"
@@ -19,7 +19,7 @@
         imageFileName="spriing.png"
       />
 
-      <WorkItem 
+      <WorkItem
         class="mt-16"
         title="Brewspace"
         subtitle="does things"
