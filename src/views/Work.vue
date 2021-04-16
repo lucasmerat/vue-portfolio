@@ -9,23 +9,24 @@
         </h2>
       </div>
     </Hero>
-    <div id="main" class="mt-12 text-accent">
+    <div class="pt-16 text-white main">
       <WorkItem
         title="Spriing"
         subtitle="Helps job seekers track and manage their job search in a sleek dashboard"
         frontStack="React, Redux, Ant Design, TailwindCSS"
-        backStack=" Node, Express, MongoDB, Heroku"
-        href="https://www.spriing.app"
+        backStack="Node, Express, MongoDB, Heroku"
+        visitHref="https://www.spriing.app"
         imageFileName="spriing.png"
       />
 
       <WorkItem
         class="mt-16"
         title="Brewspace"
-        subtitle="does things"
-        frontStack="React, Redux, Ant Design, TailwindCSS"
-        backStack=" Node, Express, MongoDB, Heroku"
-        href="https://www.spriing.app"
+        subtitle="A social app to log beers and discover new favorites"
+        frontStack="jQuery, AJAX, Handlebars, MaterializeCSS"
+        backStack="Node, Express, mySQL, Sequelize"
+        visitHref="https://brewspace.herokuapp.com/"
+        codeHref="https://github.com/lucasmerat/BrewSpace/"
         imageFileName="brew.png"
       />
     </div>

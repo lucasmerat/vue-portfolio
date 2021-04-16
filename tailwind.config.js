@@ -9,7 +9,7 @@ module.exports = {
       sm: '0.125rem',
       md: '0.375rem',
       lg: '0.5rem',
-      large: '12px',
+      xl: '1rem',
       full: '50%',
     },
     colors: {
@@ -26,6 +26,11 @@ module.exports = {
       red: colors.rose,
       yellow: colors.amber,
       pink: colors.pink,
+    },
+    extend: {
+      height: {
+        '144': '40rem',
+      }
     }
   },
   variants: {
