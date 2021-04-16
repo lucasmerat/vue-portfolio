@@ -1,6 +1,6 @@
 <template>
   <div class="work">
-    <Hero title="Check out what I've made">
+    <Hero class="h-screen" title="Check out what I've made">
 
       <div class="relative z-20 w-full ml-6 font-bold text-left md:ml-24 text-7xl md:text-7xl text-accent">
         <h1>Check out what I've made</h1>

@@ -30,6 +30,7 @@ module.exports = {
     extend: {
       height: {
         '144': '40rem',
+        '90vh': '90vh'
       }
     }
   },

@@ -23,6 +23,12 @@
           class="mr-6 text-accent hover:text-yellow-200"
           >Contact</router-link
         >
+        <a
+          href="/resume.pdf"
+          target="_blank"
+          class="mr-6 text-accent hover:text-yellow-200"
+          >Resume</a
+        >
       </div>
 
       <div class="flex items-center sm:hidden">
@@ -77,6 +83,12 @@
             active-class="border-b-2 border-accent"
             class="text-accent hover:text-yellow-200"
             >Contact</router-link
+          >
+          <router-link
+            to="/resume"
+            active-class="border-b-2 border-accent"
+            class="text-accent hover:text-yellow-200"
+            >Resume</router-link
           >
         </div>
       </transition>
