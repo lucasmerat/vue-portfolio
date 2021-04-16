@@ -14,20 +14,20 @@
         <router-link
           to="/work"
           active-class="border-b-2 border-accent"
-          class="mr-4 text-accent hover:text-yellow-200"
+          class="mr-6 text-accent hover:text-yellow-200"
           >Work</router-link
-        >
-        <router-link
-          to="/code"
-          active-class="border-b-2 border-accent"
-          class="mr-4 text-accent hover:text-yellow-200"
-          >Code</router-link
         >
         <router-link
           to="/contact"
           active-class="border-b-2 border-accent"
-          class="mr-4 text-accent hover:text-yellow-200"
+          class="mr-6 text-accent hover:text-yellow-200"
           >Contact</router-link
+        >
+        <a
+          href="/resume.pdf"
+          target="_blank"
+          class="mr-6 text-accent hover:text-yellow-200"
+          >Resume</a
         >
       </div>
 
@@ -79,16 +79,16 @@
             >Work</router-link
           >
           <router-link
-            to="/code"
-            active-class="border-b-2 border-accent"
-            class="text-accent hover:text-yellow-200"
-            >Code</router-link
-          >
-          <router-link
             to="/contact"
             active-class="border-b-2 border-accent"
             class="text-accent hover:text-yellow-200"
             >Contact</router-link
+          >
+          <router-link
+            to="/resume"
+            active-class="border-b-2 border-accent"
+            class="text-accent hover:text-yellow-200"
+            >Resume</router-link
           >
         </div>
       </transition>
