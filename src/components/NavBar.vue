@@ -84,12 +84,12 @@
             class="text-accent hover:text-yellow-200"
             >Contact</router-link
           >
-          <router-link
-            to="/resume"
-            active-class="border-b-2 border-accent"
-            class="text-accent hover:text-yellow-200"
-            >Resume</router-link
-          >
+          <a
+          href="/resume.pdf"
+          target="_blank"
+          class="text-accent hover:text-yellow-200"
+          >Resume</a
+        >
         </div>
       </transition>
     </div>
