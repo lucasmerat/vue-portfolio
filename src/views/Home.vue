@@ -16,18 +16,26 @@
 					alt=""
 				/>
 				<h4 class="pt-4 text-4xl font-bold md:text-5xl text-accent">
-					I'm a full stack software developer based in Austin, TX
+					I'm a full stack software developer based in Austin, TX - en route to Paris, France.
 				</h4>
 				<p class="mt-6 font-light text-block text-1xl md:text-2xl text-accent">
-					Currently, I'm working as a Software Engineer II at
+					I've spent the past 2.5 years working 
 					<a
 						class="underline text-brand-light hover:text-brand-dark"
 						href="https://www.skillsengine.com"
 						>SkillsEngine</a
 					>
-					- we help colleges better align their curriculum to the job market.
+					as a full stack developer helping colleges better align their curriculum to the job market.
+					My next journey brings me to France, where I will be working with 
+					<a
+						class="underline text-brand-light hover:text-brand-dark"
+						href="https://www.qonto.com"
+						>Qonto</a
+					>,
+					a leading startup building a business banking solution for
+					freelancers and small businesses across Europe.
 					I've always been passionate about how software can create
-					opportunities and improve outcomes in education and beyond. As a
+					opportunities and improve outcomes for people and businesses across the globe. As a
 					developer, I strive to always keep the user and product in mind, while
 					writing efficient and effective code. It's my mission to continue
 					building functional, beautiful applications that people love to use.
