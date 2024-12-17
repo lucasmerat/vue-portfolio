@@ -1,8 +1,8 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
+content: ['./src/**/*.{vue,js,jsx,ts,tsx}', './src/**/*.css'],
+darkMode: 'media',
   theme: {
     borderRadius: {
       none: '0',
